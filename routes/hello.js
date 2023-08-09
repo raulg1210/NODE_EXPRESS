@@ -6,6 +6,7 @@ const helloController = require('../controllers/hello')
 const api = express.Router();
 
 //usamos la funcion getHello del controller para obtener los datos en esa ruta
-api.get("/hello", helloController.getHello());
+api.get("/hello", helloController.getHello);
 
 module.exports = api;
+
